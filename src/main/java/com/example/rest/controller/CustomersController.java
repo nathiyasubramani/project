@@ -20,6 +20,7 @@ import com.example.persistence.domain.Customers;
 import com.example.rest.dto.CustomersDTO;
 import com.example.service.CustomersService;
 
+//import lombok.AllArgsConstructor;
 
 @RestController
 public class CustomersController {
@@ -28,15 +29,28 @@ public class CustomersController {
 	private CustomersService service;
 	
 	@PostMapping("/addCustomers")
-	public CustomersDTO addCustomers(@RequestBody Customers cust) {
+	public CustomersDTO addCustomers(@RequestBody Customers cust)
+	{
 		return service.addCustomers(cust);
 	}
+	
+	@PutMapping("/updateCustomers/{id}")
+	public CustomersDTO updateCustomers(@PathVariable Long id, @RequestBody Customers cust) {
+		return service.updateCustomers(id, cust);
+	}
+	
+	@DeleteMapping("/deleteCustomers/{id}")
+	public boolean deleteCustomers(@PathVariable Long id) {
+		return service.deleteCustomers(id);
+	}
+	
 	@GetMapping("/allCustomers")
 	public List<CustomersDTO> getAllCustomers(){
 		return service.getAllCustomers();
 	}
-//	@PutMapping("/updateCustomers/{cust_id}")
-//	public CustomersDTO updateCustomers(@PathVariable int cust_id, @RequestBody cust_firstname,) {
-//		return service.updateCustomers(cust_id, band);
-//}	
+	
+	@GetMapping("/customersById")
+	public CustomersDTO readBandById(@PathParam("id") Long id) {
+		return service.readById(id);
+	}
 }

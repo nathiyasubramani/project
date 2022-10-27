@@ -10,7 +10,7 @@ import com.example.persistence.domain.Orders;
 
 public class CustomersDTO {
 	
-    private int cust_id;
+    private long cust_id;
     private String cust_firstname;
     private String cust_lastname;
 	private String cust_address;
@@ -23,7 +23,7 @@ public class CustomersDTO {
 
     private List<Orders> orders = new ArrayList<>();
 
-	public int getCust_id() {
+	public long getCust_id() {
 		return cust_id;
 	}
 
@@ -111,7 +111,7 @@ public class CustomersDTO {
 		this.orders = orders;
 	}
 
-	public CustomersDTO(int cust_id, String cust_firstname, String cust_lastname, String cust_address, String cust_city,
+	public CustomersDTO(long cust_id, String cust_firstname, String cust_lastname, String cust_address, String cust_city,
 			String cust_countrycode, String cust_zipcode, String cust_dob, long cust_mobileno, String cust_emailid,
 			List<Orders> orders) {
 		super();

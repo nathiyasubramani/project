@@ -26,7 +26,7 @@ public class Customers {
 	@NotNull
 	@Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int cust_id ;
+    private long cust_id ;
 	//@Size(min = 0, max = 55)
 	//@NotNull
 	private String cust_firstname;
@@ -47,7 +47,7 @@ public class Customers {
     private List<Orders> orders = new ArrayList<>();
 
 
-	public int getCust_id() {
+	public long getCust_id() {
 		return cust_id;
 	}
 
@@ -157,7 +157,7 @@ public class Customers {
 	}
 
 
-	public Customers(int cust_id, String cust_firstname,
+	public Customers(long cust_id, String cust_firstname,
 			String cust_lastname, String cust_address,
 			String cust_city, String cust_countrycode, String cust_zipcode, String cust_dob, long cust_mobileno,
 			String cust_emailid, List<com.example.persistence.domain.Orders> orders) {
@@ -188,17 +188,5 @@ public class Customers {
 				+ cust_countrycode + ", cust_zipcode=" + cust_zipcode + ", cust_dob=" + cust_dob + ", cust_mobileno="
 				+ cust_mobileno + ", cust_emailid=" + cust_emailid + ", orders=" + orders + "]";
 	}
-
-
-	public Object getName() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-
-	public void setName(Object name) {
-		// TODO Auto-generated method stub
-		
-	}
-
-}	
+}
+	

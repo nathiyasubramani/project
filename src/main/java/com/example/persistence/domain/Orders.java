@@ -20,7 +20,7 @@ public class Orders {
 	@NotNull
 	@Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-	private int ord_id ;
+	private long ord_id ;
 	@NotNull
 	private int cust_id;
 	@NotNull
@@ -40,12 +40,12 @@ public class Orders {
     private Customers customers;
 
     @NotNull
-	public int getOrd_id() {
+	public long getOrd_id() {
 		return ord_id;
 	}
 
 
-	public void setOrd_id(int ord_id) {
+	public void setOrd_id(long ord_id) {
 		this.ord_id = ord_id;
 	}
 
@@ -130,7 +130,7 @@ public class Orders {
 	}
 
 
-	public Orders(@NotNull int ord_id, @NotNull int cust_id, int prod_qty, float prod_price, float prod_discount,
+	public Orders(@NotNull long ord_id, @NotNull int cust_id, int prod_qty, float prod_price, float prod_discount,
 			float total_amount, int total_qty, float saving_amount, Customers customers) {
 		super();
 		this.ord_id = ord_id;
@@ -158,4 +158,3 @@ public class Orders {
 	}
 
 }  
-

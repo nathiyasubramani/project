@@ -16,6 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.example.persistence.domain.Customers;
 import com.example.persistence.domain.Orders;
+import com.example.rest.dto.CustomersDTO;
 import com.example.rest.dto.OrdersDTO;
 import com.example.service.CustomersService;
 import com.example.service.OrdersService;
@@ -27,7 +28,28 @@ public class OrdersController {
 	private OrdersService service;
 	
 	@PostMapping("/addOrders")
-	public OrdersDTO addOrder(@RequestBody Orders order) {
-		return service.addOrders(order);
+	public OrdersDTO addOrders(@RequestBody Orders ord)
+	{
+		return service.addOrders(ord);
+	}
+	
+	@PutMapping("/updateOrders/{id}")
+	public OrdersDTO updateOrders(@PathVariable Long id, @RequestBody Orders ord) {
+		return service.updateOrders(id, ord);
+	}
+
+	@DeleteMapping("/deleteOrders/{id}")
+	public boolean deleteOrders(@PathVariable Long id) {
+		return service.deleteOrders(id);
+	}
+	
+	@GetMapping("/allOrders")
+	public List<OrdersDTO> getAllOrders(){
+		return service.getAllOrders();
+	}
+	
+	@GetMapping("/ordersById")
+	public OrdersDTO readOrdersById(@PathParam("id") Long id) {
+		return service.readById(id);
 	}
 }
