@@ -20,8 +20,6 @@ import com.example.persistence.domain.Customers;
 import com.example.rest.dto.CustomersDTO;
 import com.example.service.CustomersService;
 
-//import lombok.AllArgsConstructor;
-
 @RestController
 public class CustomersController {
 	

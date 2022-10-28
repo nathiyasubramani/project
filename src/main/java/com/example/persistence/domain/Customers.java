@@ -27,12 +27,8 @@ public class Customers {
 	@Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long cust_id ;
-	//@Size(min = 0, max = 55)
-	//@NotNull
 	private String cust_firstname;
-	//@Size(min = 0, max = 55)
 	private String cust_lastname;
-	//@Size(min = 0, max = 55)
 	private String cust_address;
 	private String cust_city;
 	private String cust_countrycode;
