@@ -25,7 +25,7 @@ Executing on Spring Boot :
         . Run as Java Application
         . Run as Spring Boot App
        
-  After this you can run thw CRUD operations using something like Postman as shown above.     
+  After this you can run the CRUD operations using something like Postman as shown above.     
        
   Testing:
        
