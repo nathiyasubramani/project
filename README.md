@@ -41,7 +41,9 @@ Features :-
 
 13.![](https://github.com/nathiyasubramani/project/blob/main/images/4.Update%20Customer%20Details.jpg)
 
-14.
+14.![](https://github.com/nathiyasubramani/project/blob/main/images/5.Delete%20Customers.jpg)
+
+15.![](
 
 
 Executing on Spring Boot :  
