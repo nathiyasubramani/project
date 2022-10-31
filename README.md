@@ -39,6 +39,9 @@ Features :-
 
 12.![](https://github.com/nathiyasubramani/project/blob/main/images/4.1.Update%20Order%20via%20PUT.jpg)
 
+13.![](https://github.com/nathiyasubramani/project/blob/main/images/4.Update%20Customer%20Details.jpg)
+
+14.
 
 
 Executing on Spring Boot :  
