@@ -22,7 +22,9 @@ Features :-
 
 4.![](https://github.com/nathiyasubramani/project/blob/main/images/10.Get%20All%20Orders.jpg)
 
-5.![]()
+5.![](https://github.com/nathiyasubramani/project/blob/main/images/11.After%20Update.jpg)
+
+6.![]()
 
 
 
