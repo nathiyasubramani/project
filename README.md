@@ -24,7 +24,9 @@ Features :-
 
 5.![](https://github.com/nathiyasubramani/project/blob/main/images/11.After%20Update.jpg)
 
-6.![]()
+6.![](https://github.com/nathiyasubramani/project/blob/main/images/12.API%20Orders%20Insert.png)
+
+7.
 
 
 
