@@ -49,7 +49,9 @@ Features :-
 
 17. https://github.com/nathiyasubramani/project/blob/main/images/6.Get%20All%20Customers.jpg
 
-18. 
+18. https://github.com/nathiyasubramani/project/blob/main/images/7.Get%20Customer%20By%20ID.jpg
+
+19.
 
 
 Executing on Spring Boot :  
