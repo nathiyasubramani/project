@@ -18,7 +18,9 @@ Features :-
 
 2.![](https://github.com/nathiyasubramani/project/blob/main/images/1.success.png)
 
-3.![]()
+3.![](https://github.com/nathiyasubramani/project/blob/main/images/10.1After%20Delete%20via%20PostMan.jpg)
+
+4.![]()
 
 
 
