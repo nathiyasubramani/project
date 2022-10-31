@@ -55,7 +55,9 @@ Features :-
 
 20.![](https://github.com/nathiyasubramani/project/blob/main/images/9.1.%20After%20Delete%20Orders.jpg)
 
-21.![]()
+21.![](https://github.com/nathiyasubramani/project/blob/main/images/9.Delete%20Orders.jpg)
+
+22.![]()
 
 
 Executing on Spring Boot :  
